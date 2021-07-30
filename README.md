@@ -15,7 +15,7 @@
 # Before getting start
 
 > 1. Download Vivado
-> 2. Get the board file from [this link](https://github.com/Digilent/vivado-boards/archive/master.zip?_ga=2.208193810.1843468524.1627578007-919375833.1627165649)
+> 2. Get the board file from [this link](https://github.com/Digilent/vivado-boards/archive/master.zip?_ga=2.208193810.1843468524.1627578007-919375833.1627165649) and copy over to  C:\Xilinx\Vivado\<VERSION>\data\boards\board_files
 
 # Lesson Learned
 
