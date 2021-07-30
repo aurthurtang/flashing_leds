@@ -19,10 +19,9 @@
 
 # Lesson Learned
 
-> 1. The duration cannot be set to too small.  If so, you can't see the LEDs blinking.  I accidentally changed the value for simulation and forgot to change back. When I loaded the code to FPGA, all the lights are on.  It took me some time to realize that it was because of the duration parameter.
+> The duration cannot be set to too small.  If so, you can't see the LEDs blinking.  I accidentally changed the value for simulation and forgot to change back. When I loaded the code to FPGA, all the lights are on.  It took me some time to realize that it was because of the duration parameter.
 
-> 2.  Originally, I would think that I can simply use the following code to cycle through the LEDs:
-
+> Originally, I would think that I can simply use the following code to cycle through the LEDs:
 >             *led[led_shift_cnt] <= 1'b1*
 >             *led[led_shift_cnt-1] <= 1'b0*
 >  You would think that when led_shift_cnt is 4'b0, led_shift_cnt-1 will be 4'b1111.  However, since the led_shift_cnt is **unsigned**, led_shift_cnt - 1 is not equal to 4'b1111 when count is 0.  Somehow, in the FPGA, the LED[15] will stay high after the first cycle
