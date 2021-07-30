@@ -28,6 +28,6 @@
 >             
 >  You would think that when led_shift_cnt is 4'b0, led_shift_cnt-1 will be 4'b1111.  However, since the led_shift_cnt is **unsigned**, led_shift_cnt - 1 is not equal to 4'b1111 when count is 0.  Somehow, in the FPGA, the LED[15] will stay high after the first cycle
 
-#Reference
+# Reference
 > 1. [Nexys A7 Reference Page] (https://reference.digilentinc.com/programmable-logic/nexys-a7/start)
  
