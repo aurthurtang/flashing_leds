@@ -26,7 +26,7 @@
 >             led[led_shift_cnt] <= 1'b1
 >             led[led_shift_cnt-1] <= 1'b0
 >             
->  You would think that when led_shift_cnt is 4'b0, led_shift_cnt-1 will be 4'b1111.  However, since the led_shift_cnt is **unsigned**, led_shift_cnt - 1 is not equal to 4'b1111 when count is 0.  Somehow, in the FPGA, the LED[15] will stay high after the first cycle
+>  You would think that when led_shift_cnt is 4'b0, led_shift_cnt-1 will be 4'b1111.  However, since the led_shift_cnt is **unsigned**, led_shift_cnt - 1 is not equal to 4'b1111 when count is 0.  Somehow, in the FPGA, the LED[15] will stay high after the first cycle.  Instead of using the if-else clause when led_shift_cnt, one alternative is to use *signed* number for the led_shift_cnt.  If doing so, led_shift_cnt needs to add one additional bit for signed extension.
 
 # Reference
 > 1. [Nexys A7 Reference Page](https://reference.digilentinc.com/programmable-logic/nexys-a7/start)
