@@ -6,6 +6,7 @@
 > the code will trigger one LED to be on for a given time and then cycle to the next one and so forth.  Once it reaches the 
 > last LED, it will cycle through again.
 
+>![Completed Project](https://youtu.be/a98tVVDXSi8)
 
 # Requirements
 
