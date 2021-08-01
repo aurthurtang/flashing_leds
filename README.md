@@ -6,11 +6,7 @@
 > the code will trigger one LED to be on for a given time and then cycle to the next one and so forth.  Once it reaches the 
 > last LED, it will cycle through again.
 
-<!-- blank line -->
-<figure class="video_container">
-  <iframe src="https://youtu.be/a98tVVDXSi8" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-<!-- blank line -->
+[![Watch the video](https://github.com/aurthurtang/flashing_leds/blob/main/flashing_LEDs.JPG)](https://youtu.be/a98tVVDXSi8)
 
 
 # Requirements
