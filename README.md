@@ -17,6 +17,23 @@
 > 1. Download Vivado
 > 2. Get the board file from [this link](https://github.com/Digilent/vivado-boards/archive/master.zip?_ga=2.208193810.1843468524.1627578007-919375833.1627165649) and copy over to  C:\Xilinx\Vivado\<VERSION>\data\boards\board_files
 
+# Steps
+
+> 1. Open Vivado and start a new project.  Please select the Nexys A7 board design
+> 2. Upload the RTL file to the source
+> 3. Update constraints to connect the pin to package pins
+>     Please download the master XDC from [this link](https://reference.digilentinc.com/learn/programmable-logic/doc/github/digilent-xdc)
+>
+>     For this project, we will be using the LED pins and the clocks.  Copy the lines with the LED and the sys_clk ports.  Also you will need to create a clock at the clock port
+> 4. Run Synthesis->Implementation->Generate Bit Stream   
+> 5. Open **Hardware Manager** and click on **Open Target**.  Then you can just do Auto Connect
+> 6. Program Device
+  
+# Takeaway
+
+> 1. Learn to run Vivado and get familiar with the board.  
+> 2. Understand the board file and master constraints for the board
+
 # Lesson Learned
 
 > 1.  The duration cannot be set to too small.  If so, you can't see the LEDs blinking.  I accidentally changed the value for simulation and forgot to change back. When I loaded the code to FPGA, all the lights are on.  It took me some time to realize that it was because of the duration parameter.
